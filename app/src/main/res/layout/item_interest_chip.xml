@@ -1,0 +1,27 @@
+<!-- app/src/main/res/layout/item_interest_chip.xml -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/biru_muda_cerah"
+    app:cardBackgroundColor="@color/biru_muda_cerah_transparent"> <!-- Warna transparan dari colors.xml -->
+
+    <TextView
+        android:id="@+id/tv_chip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="Nama Minat"
+        android:textColor="@color/biru_muda_cerah"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+</com.google.android.material.card.MaterialCardView>

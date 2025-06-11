@@ -1,0 +1,51 @@
+<!-- app/src/main/res/layout/item_video.xml -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_video_thumbnail"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_video_placeholder"
+            android:background="@drawable/rounded_image_background"
+            android:contentDescription="Video Thumbnail" />
+
+        <TextView
+            android:id="@+id/tv_video_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="Judul Video Panjang Sekali Yang Mungkin Terpotong"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/biru_tua"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            app:tint="@color/biru_muda_cerah"
+            android:contentDescription="Play Video" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/layout/fragment_profile.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu_abu_terang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Bagian "Tentang" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/biru_tua"
+            android:layout_marginBottom="8dp" />
+
+        <include
+            android:id="@+id/menu_item_profile_detail"
+            layout="@layout/item_profile_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <include
+            android:id="@+id/menu_item_interests"
+            layout="@layout/item_profile_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bagian "Terhubung" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terhubung"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/biru_tua"
+            android:layout_marginBottom="8dp" />
+
+        <include
+            android:id="@+id/menu_item_contact"
+            layout="@layout/item_profile_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <include
+            android:id="@+id/menu_item_find_me"
+            layout="@layout/item_profile_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bagian "Aplikasi" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/biru_tua"
+            android:layout_marginBottom="8dp" />
+
+        <include
+            android:id="@+id/menu_item_about_app"
+            layout="@layout/item_profile_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

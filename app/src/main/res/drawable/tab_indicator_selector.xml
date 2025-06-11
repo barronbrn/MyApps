@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/biru_muda_cerah" />
+            <size android:width="12dp" android:height="12dp" />
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/abu_abu_gelap" />
+            <size android:width="5dp" android:height="5dp" />
+        </shape>
+    </item>
+</selector>

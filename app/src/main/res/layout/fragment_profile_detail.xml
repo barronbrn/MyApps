@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/layout/fragment_profile_detail.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu_abu_terang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Foto Diri -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile_photo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile_placeholder"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:strokeColor="@color/biru_muda_cerah"
+            app:strokeWidth="2dp"
+            android:background="@color/biru_muda_cerah"
+            android:contentDescription="Profile Photo" />
+
+        <!-- Nama Lengkap -->
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Nama Pengguna"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/biru_tua"
+            android:textAlignment="center" />
+
+        <!-- Profesi/Status Singkat -->
+        <TextView
+            android:id="@+id/tv_profile_profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Memuat..."
+            android:textSize="18sp"
+            android:textColor="@color/abu_abu_gelap"
+            android:textAlignment="center" />
+
+        <!-- Card Deskripsi tentang diri -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tentang Aku"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/biru_tua" />
+
+                <TextView
+                    android:id="@+id/tv_profile_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Memuat deskripsi..."
+                    android:textSize="16sp"
+                    android:textColor="@color/abu_abu_gelap" />
+
+                <TextView
+                    android:id="@+id/tv_profile_quote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="“Kutipan favorit Anda di sini.”"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/abu_abu_gelap"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

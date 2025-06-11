@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/navigation/main_nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Splash Fragment -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.myapps.ui.fragment.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash"> <!-- tools:layout untuk preview di Android Studio -->
+        <action
+            android:id="@+id/action_splashFragment_to_walkthroughFragment"
+            app:destination="@id/walkthroughFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" /> <!-- Hapus SplashFragment dari back stack -->
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Walkthrough Fragment (akan berisi ViewPager2) -->
+    <fragment
+        android:id="@+id/walkthroughFragment"
+        android:name="com.example.myapps.ui.fragment.WalkthroughFragment"
+        android:label="WalkthroughFragment"
+        tools:layout="@layout/fragment_walkthrough">
+        <action
+            android:id="@+id/action_walkthroughFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/walkthroughFragment"
+            app:popUpToInclusive="true" /> <!-- Hapus WalkthroughFragment dari back stack setelah selesai -->
+    </fragment>
+
+    <!-- Home Fragment (akan menjadi tujuan untuk Bottom Navigation "Home") -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapps.ui.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <!-- Aksi navigasi dari Home ke detail profil -->
+        <action
+            android:id="@+id/action_homeFragment_to_profileDetailFragment"
+            app:destination="@id/profileDetailFragment" />
+        <!-- Aksi navigasi dari Home ke minat -->
+        <action
+            android:id="@+id/action_homeFragment_to_interestFragment"
+            app:destination="@id/interestFragment" />
+        <!-- Aksi navigasi dari Home ke aktivitas harian -->
+        <action
+            android:id="@+id/action_homeFragment_to_dailyActivityFragment"
+            app:destination="@id/dailyActivityFragment" />
+    </fragment>
+
+    <!-- Daily Activity Fragment (akan menjadi tujuan untuk Bottom Navigation "Daily Activity") -->
+    <fragment
+        android:id="@+id/dailyActivityFragment"
+        android:name="com.example.myapps.ui.fragment.DailyActivityFragment"
+        android:label="DailyActivity"
+        tools:layout="@layout/fragment_daily_activity" />
+
+    <!-- Gallery Fragment (Baru) -->
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.myapps.ui.fragment.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.example.myapps.ui.fragment.PlaylistFragment"
+        android:label="Playlist"
+        tools:layout="@layout/fragment_playlist" />
+
+    <!-- Profile Fragment (akan menjadi tujuan untuk Bottom Navigation "Profile") -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myapps.ui.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <!-- Aksi navigasi dari Profile hub ke sub-fragment detail profil -->
+        <action
+            android:id="@+id/action_profileFragment_to_profileDetailFragment"
+            app:destination="@id/profileDetailFragment" />
+        <!-- Aksi navigasi dari Profile hub ke minat -->
+        <action
+            android:id="@+id/action_profileFragment_to_interestFragment"
+            app:destination="@id/interestFragment" />
+        <!-- Aksi navigasi dari Profile hub ke kontak -->
+        <action
+            android:id="@+id/action_profileFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <!-- Aksi navigasi dari Profile hub ke temukan aku -->
+        <action
+            android:id="@+id/action_profileFragment_to_findMeFragment"
+            app:destination="@id/findMeFragment" />
+        <!-- Aksi navigasi dari Profile hub ke dialog about -->
+        <action
+            android:id="@+id/action_profileFragment_to_aboutDialogFragment"
+            app:destination="@id/aboutDialogFragment" />
+    </fragment>
+
+    <!-- Sub-Fragments / Tujuan Sekunder -->
+    <!-- Fragment untuk detail profil -->
+    <fragment
+        android:id="@+id/profileDetailFragment"
+        android:name="com.example.myapps.ui.fragment.ProfileDetailFragment"
+        android:label="Profile Detail"
+        tools:layout="@layout/fragment_profile_detail" />
+    <!-- Fragment untuk minat -->
+    <fragment
+        android:id="@+id/interestFragment"
+        android:name="com.example.myapps.ui.fragment.InterestFragment"
+        android:label="Interests"
+        tools:layout="@layout/fragment_interest" />
+    <!-- Fragment untuk kontak -->
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.myapps.ui.fragment.ContactFragment"
+        android:label="Contact Me"
+        tools:layout="@layout/fragment_contact" />
+    <!-- Fragment untuk temukan aku (peta statis) -->
+    <fragment
+        android:id="@+id/findMeFragment"
+        android:name="com.example.myapps.ui.fragment.FindMeFragment"
+        android:label="Find Me"
+        tools:layout="@layout/fragment_find_me" />
+    <!-- DialogFragment untuk informasi "About" -->
+    <dialog
+        android:id="@+id/aboutDialogFragment"
+        android:name="com.example.myapps.ui.fragment.AboutDialogFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about_dialog" />
+
+</navigation>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu_abu_terang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Bagian Telepon -->
+        <include
+            android:id="@+id/contact_option_phone"
+            layout="@layout/item_contact_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Bagian Email -->
+        <include
+            android:id="@+id/contact_option_email"
+            layout="@layout/item_contact_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Judul Media Sosial -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media Sosial"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/biru_tua"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Bagian Facebook -->
+        <include
+            android:id="@+id/contact_option_facebook"
+            layout="@layout/item_contact_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Bagian WhatsApp -->
+        <include
+            android:id="@+id/contact_option_whatsapp"
+            layout="@layout/item_contact_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bagian Temukan Aku -->
+        <include
+            android:id="@+id/contact_option_find_me"
+            layout="@layout/item_contact_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bagian Tentang Aplikasi -->
+        <include
+            android:id="@+id/contact_option_about_app"
+            layout="@layout/item_contact_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

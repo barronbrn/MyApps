@@ -1,0 +1,47 @@
+<!-- app/src/main/res/layout/fragment_walkthrough_page.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/abu_abu_terang">
+
+    <!-- Ilustrasi / Ikon besar -->
+    <ImageView
+        android:id="@+id/iv_walkthrough_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_onboarding_welcome"
+        android:contentDescription="Walkthrough Image" />
+
+    <!-- Judul halaman -->
+    <TextView
+        android:id="@+id/tv_walkthrough_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Jelajahi Duniaku."
+        android:textAlignment="center"
+        android:textColor="@color/biru_tua"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Deskripsi singkat -->
+    <TextView
+        android:id="@+id/tv_walkthrough_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Ini adalah ruang personal tempat kamu bisa melihat lebih dekat siapa diriku, apa yang aku suka, dan aktivitas harianku."
+        android:textAlignment="center"
+        android:textColor="@color/abu_abu_gelap"
+        android:textSize="16sp" />
+
+</LinearLayout>

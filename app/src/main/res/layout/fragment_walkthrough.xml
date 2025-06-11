@@ -1,0 +1,55 @@
+<!-- app/src/main/res/layout/fragment_walkthrough.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/abu_abu_terang">
+
+    <!-- Tombol Lewati -->
+    <Button
+        android:id="@+id/btn_skip"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Lewati"
+        android:textColor="@color/biru_tua"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- ViewPager2 untuk halaman walkthrough -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_walkthrough"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Page Indicator (menggunakan TabLayout untuk indikator dot) -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        app:tabBackground="@drawable/tab_indicator_selector"
+        app:tabIndicatorHeight="0dp" />
+
+    <!-- Tombol Selanjutnya / Mulai -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Selanjutnya"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/biru_muda_cerah"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
