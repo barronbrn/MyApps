@@ -40,13 +40,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
-        <!-- Card 3: Daily Activity -->
-        <include
-            android:id="@+id/card_daily_activity"
-            layout="@layout/item_home_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp" />
 
         <!-- Card 4: Quote -->
         <com.google.android.material.card.MaterialCardView

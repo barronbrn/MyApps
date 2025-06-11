@@ -28,23 +28,6 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Setup item menu "Tentang" -> "Detail Profil"
-        binding.menuItemProfileDetail.tvMenuTitle.text = "Detail Profil"
-        binding.menuItemProfileDetail.tvMenuSubtitle.text = "Foto Diri, Deskripsi, Profesi"
-        binding.menuItemProfileDetail.ivMenuIcon.setImageResource(R.drawable.ic_account_circle_black_24dp)
-        binding.menuItemProfileDetail.ivMenuIcon.setColorFilter(ContextCompat.getColor(requireContext(), R.color.biru_muda_cerah))
-        binding.menuItemProfileDetail.root.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_profileDetailFragment)
-        }
-
-        // Setup item menu "Tentang" -> "Minat"
-        binding.menuItemInterests.tvMenuTitle.text = "Minat"
-        binding.menuItemInterests.tvMenuSubtitle.text = "Hobi, Suka, Tidak Suka, Cita-cita"
-        binding.menuItemInterests.ivMenuIcon.setImageResource(R.drawable.ic_star_black_24dp)
-        binding.menuItemInterests.ivMenuIcon.setColorFilter(ContextCompat.getColor(requireContext(), R.color.biru_muda_cerah))
-        binding.menuItemInterests.root.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_interestFragment)
-        }
 
         // Setup item menu "Terhubung" -> "Kontak"
         binding.menuItemContact.tvMenuTitle.text = "Kontak"

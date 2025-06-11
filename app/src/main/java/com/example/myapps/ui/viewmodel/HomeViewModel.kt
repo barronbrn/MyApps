@@ -15,10 +15,10 @@ class HomeViewModel @Inject constructor(
     private val repository: AppRepository
 ) : ViewModel() {
 
-    // Mengambil profil pengguna dari repository dan mengkonversinya menjadi LiveData
+
     val userProfile: LiveData<UserProfile?> = repository.getUserProfile().asLiveData()
 
-    // Membuat ringkasan deskripsi dari profil pengguna menggunakan LiveData transformation
+
     val aboutMeSummary: LiveData<String> = userProfile.map { profile ->
         profile?.let {
             val descriptionWords = it.description.split(" ")

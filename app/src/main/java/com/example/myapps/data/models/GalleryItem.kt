@@ -7,5 +7,4 @@ import androidx.room.PrimaryKey
 data class GalleryItem(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val imageUrl: String,
-    val description: String? = null
 )

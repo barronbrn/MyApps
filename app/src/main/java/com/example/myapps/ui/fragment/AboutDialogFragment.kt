@@ -31,8 +31,8 @@ class AboutDialogFragment : DialogFragment() {
         binding.appName.text = getString(R.string.app_name)
         binding.appVersion.text = "Versi: ${Constants.APP_VERSION}"
         binding.appBuild.text = "Build: ${Constants.APP_BUILD}"
-        binding.appDeveloper.text = "Dikembangkan oleh: [Nama Anda]"
-        binding.appCopyright.text = "© 2024. All rights reserved."
+        binding.appDeveloper.text = "Dikembangkan oleh: [Dani Herawan]"
+        binding.appCopyright.text = "© 2025. All rights reserved."
 
         binding.btnClose.setOnClickListener {
             dismiss()

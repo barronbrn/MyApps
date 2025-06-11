@@ -62,13 +62,6 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_interestFragment)
         }
 
-        binding.cardDailyActivity.tvCardTitle.text = "Aktivitas Terbaru"
-        binding.cardDailyActivity.tvCardDescription.text = "Minggu ini fokus belajar programming."
-        binding.cardDailyActivity.ivIcon.setImageResource(R.drawable.ic_list_black_24dp)
-        binding.cardDailyActivity.ivIcon.setColorFilter(androidx.core.content.ContextCompat.getColor(requireContext(), R.color.biru_muda_cerah))
-        binding.cardDailyActivity.root.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_dailyActivityFragment)
-        }
     }
 
     override fun onDestroyView() {

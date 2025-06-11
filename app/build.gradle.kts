@@ -80,4 +80,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
 
+    implementation("com.airbnb.android:lottie:6.3.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+
 }

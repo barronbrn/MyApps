@@ -51,41 +51,33 @@ class ContactFragment : Fragment() {
             openEmail(requireContext(), Constants.YOUR_EMAIL, "Halo dari Aplikasi Persona")
         }
 
-        // Setup Opsi Kontak: Facebook
-        binding.contactOptionFacebook.ivContactIcon.setImageResource(R.drawable.ic_facebook_black_24dp)
-        binding.contactOptionFacebook.ivContactIcon.setColorFilter(ContextCompat.getColor(requireContext(), R.color.biru_muda_cerah)) // Atau warna khusus Facebook
-        binding.contactOptionFacebook.tvContactTitle.text = "Facebook"
-        binding.contactOptionFacebook.tvContactSubtitle.text = "facebook.com/your_profile"
+        // Setup Opsi Kontak: Twitter
+        binding.contactOptionFacebook.ivContactIcon.setImageResource(R.drawable.twitter)
+        binding.contactOptionFacebook.tvContactTitle.text = "Twitter"
+        binding.contactOptionFacebook.tvContactSubtitle.text = "barron_brn"
         binding.contactOptionFacebook.root.setOnClickListener {
             openSocialMedia(requireContext(), Constants.YOUR_TWITTER_URL)
         }
 
         // Setup Opsi Kontak: WhatsApp
-        binding.contactOptionWhatsapp.ivContactIcon.setImageResource(R.drawable.ic_whatsapp_black_24dp)
-        binding.contactOptionWhatsapp.ivContactIcon.setColorFilter(ContextCompat.getColor(requireContext(), R.color.biru_muda_cerah)) // Atau warna khusus WhatsApp
+        binding.contactOptionWhatsapp.ivContactIcon.setImageResource(R.drawable.whatsapp)
         binding.contactOptionWhatsapp.tvContactTitle.text = "WhatsApp"
         binding.contactOptionWhatsapp.tvContactSubtitle.text = Constants.YOUR_PHONE_NUMBER
         binding.contactOptionWhatsapp.root.setOnClickListener {
             openUrl(requireContext(), Constants.YOUR_WHATSAPP_URL)
         }
 
-        // Setup Opsi Kontak: Temukan Aku (Navigasi ke FindMeFragment)
-        binding.contactOptionFindMe.ivContactIcon.setImageResource(R.drawable.ic_location_on_black_24dp)
-        binding.contactOptionFindMe.ivContactIcon.setColorFilter(ContextCompat.getColor(requireContext(), R.color.red_error))
-        binding.contactOptionFindMe.tvContactTitle.text = "Temukan Aku"
-        binding.contactOptionFindMe.tvContactSubtitle.text = "Lihat lokasiku di peta"
-        binding.contactOptionFindMe.root.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_findMeFragment)
+        // setup Opsi Kontak: Instagram
+        binding.contactOptionInstagram.ivContactIcon.setImageResource(R.drawable.instagram)
+        binding.contactOptionInstagram.tvContactTitle.text = "Instagram"
+        binding.contactOptionInstagram.tvContactSubtitle.text = "barron.brn"
+        binding.contactOptionInstagram.root.setOnClickListener {
+            openSocialMedia(requireContext(), Constants.YOUR_INSTAGRAM_URL)
         }
 
-        // Setup Opsi Kontak: Tentang Aplikasi (Navigasi ke AboutDialogFragment)
-        binding.contactOptionAboutApp.ivContactIcon.setImageResource(R.drawable.ic_info_black_24dp)
-        binding.contactOptionAboutApp.ivContactIcon.setColorFilter(ContextCompat.getColor(requireContext(), android.R.color.darker_gray))
-        binding.contactOptionAboutApp.tvContactTitle.text = "Tentang Aplikasi"
-        binding.contactOptionAboutApp.tvContactSubtitle.text = "Versi dan informasi aplikasi"
-        binding.contactOptionAboutApp.root.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_aboutDialogFragment)
-        }
+
+
+
     }
 
     override fun onDestroyView() {

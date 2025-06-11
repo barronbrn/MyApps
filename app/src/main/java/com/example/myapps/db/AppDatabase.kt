@@ -22,7 +22,7 @@ import com.example.myapps.data.models.VideoItem
         MusicItem::class,
         VideoItem::class
     ],
-    version = 1,
+    version = 4,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

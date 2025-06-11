@@ -17,44 +17,58 @@ object DummyData {
             id = 1,
             name = "Dani Herawan",
             photoUrl = "profile",
-            description = "Seorang mahasiswa aktif di salah satu universitas di Bandung, dengan ketertarikan mendalam pada pengembangan aplikasi mobile, khususnya Android. Saya suka belajar hal baru, berkolaborasi dalam proyek tim, dan memecahkan masalah kompleks. Di waktu luang, saya menikmati bermain game, membaca novel fiksi ilmiah, dan mencoba resep masakan baru. Cita-cita saya adalah menjadi seorang Software Architect yang inovatif dan memberikan dampak positif bagi banyak orang melalui teknologi.",
+            description = "Seorang mahasiswa aktif di salah satu universitas di Bandung, dengan ketertarikan mendalam pada pengembangan aplikasi mobile, khususnya Android. Saya suka belajar hal baru, berkolaborasi dalam proyek tim, dan memecahkan masalah kompleks. Di waktu luang, saya menikmati bermain game, membaca komik, dan menonton anime. Cita-cita saya adalah menjadi seorang pengusaha serta ingin menjadi orang yang bisa membawa dampak positif bagi banyak orang",
             profession = "Mahasiswa Informatika | Android Developer",
-            quote = "“Saya tidak akan melakukan sesuatu yang tidak perlu.Tapi jika saya akan melakukan sesuatu, akan saya lakukan dengan cepat”"
+            quote = "“If I don’t have to do it, I won’t. If I have to do it, I’ll make it quick.”"
         )
     }
 
     fun getDailyActivities(): List<DailyActivity> {
         return listOf(
             DailyActivity(title = "Kelas Pagi", time = "07:00 - 09:00", description = "Mengikuti mata kuliah Pemrograman Android.", imageUrl = "ic_shool_black"),
-            DailyActivity(title = "Latihan Coding Mandiri", time = "11:30 - 13:00", description = "Mengerjakan studi kasus Android.", imageUrl = "ic_music_placeholder"),
-            DailyActivity(title = "Makan Siang", time = "13:00 - 14:00", description = "Istirahat sambil menikmati makanan favorit.", imageUrl = "ic_home.png"),
-            DailyActivity(title = "Diskusi Kelompok Tugas Besar", time = "14:00 - 16:00", description = "Merencanakan arsitektur proyek bersama tim.", imageUrl = "ic_facebook_black_24dp.png"),
-            DailyActivity(title = "Olahraga & Refreshing", time = "16:00 - 18:00", description = "Jogging santai di sekitar kampus.", imageUrl = "ic_facebook_black_24dp.png"),
-            DailyActivity(title = "Ngopi", time = "20:00 - 21:30", description = "Menyelami dunia fiksi ilmiah sebelum tidur.", imageUrl = "ic_facebook_black_24dp.png"),
-            DailyActivity(title = "Baca Komik dan Bermain Game", time = "21:00 - 23:30", description = "Mengevaluasi hari dan membuat rencana esok.", imageUrl = "ic_facebook_black_24dp.png")
+            DailyActivity(title = "Latihan Coding Mandiri", time = "11:30 - 13:00", description = "Mengerjakan studi kasus Android.", imageUrl = "ic_shool_black"),
+            DailyActivity(title = "Makan Siang", time = "13:00 - 14:00", description = "Istirahat sambil menikmati makanan .", imageUrl = "ic_shool_black"),
+            DailyActivity(title = "Diskusi Kelompok Tugas Besar", time = "14:00 - 16:00", description = "Merencanakan arsitektur proyek bersama tim.", imageUrl = "ic_activity_placeholder"),
+            DailyActivity(title = "Refreshing", time = "16:00 - 18:00", description = "Nyoride", imageUrl = "ic_activity_placeholder"),
+            DailyActivity(title = "Ngopi", time = "20:00 - 21:30", description = "Ngopi Bareng Teman.", imageUrl = "ic_activity_placeholder"),
+            DailyActivity(title = "Baca Komik dan Bermain Game", time = "21:00 - 23:30", description = "Membaca Komik dan Bermain game sebelum tidur", imageUrl = "ic_activity_placeholder")
+        )
+    }
+
+    fun getInterests(): List<Interest> {
+        return listOf(
+            Interest(type = "hoby", item = "Bermain Game"),
+            Interest(type = "hoby", item = "Membaca Komik"),
+
+            Interest(type = "suka", item = "Musik"),
+
+            Interest(type = "tidak_suka", item = "Saldo kosong"),
+
+            Interest(type = "minat", item = "Ngoding"),
+
+            Interest(type = "cita_cita", item = "Pengusaha"),
         )
     }
 
     fun getFriends(): List<Friend> {
         return listOf(
-            Friend(name = "Farkhan", photoUrl = "friend_andi"),
-            Friend(name = "Daniel", photoUrl = "friend_budi"),
-            Friend(name = "Aksal", photoUrl = "friend_citra"),
-            Friend(name = "Andrian", photoUrl = "friend_dewi"),
-            Friend(name = "Alka", photoUrl = "friend_eko"),
-            Friend(name = "Fathan", photoUrl = "friend_fara")
+            Friend(name = "Farkhan", photoUrl = "friend_farkhan"),
+            Friend(name = "Daniel", photoUrl = "friend_daniel"),
+            Friend(name = "Aksal", photoUrl = "friend_aksal"),
+            Friend(name = "Andrian", photoUrl = "friend_andrian"),
+            Friend(name = "Alka", photoUrl = "friend_alka"),
+            Friend(name = "Fathan", photoUrl = "friend_fathan")
         )
     }
 
     fun getGalleryItems(): List<GalleryItem> {
         return listOf(
-            GalleryItem(imageUrl = "gallery_1", description = "Langit Malam Berbintang"),
-            GalleryItem(imageUrl = "gallery_2", description = "Sungai di Pegunungan"),
-            GalleryItem(imageUrl = "gallery_3", description = "Hutan Fantasi"),
-            GalleryItem(imageUrl = "gallery_4", description = "Abstrak Warna-warni"),
-            GalleryItem(imageUrl = "gallery_5", description = "Puncak Gunung Bersalju"),
-            GalleryItem(imageUrl = "gallery_6", description = "Danau yang Tenang"),
-            GalleryItem(imageUrl = "gallery_7", description = "Langit Malam Berbintang (2)"),
+            GalleryItem(imageUrl = "gallery_1"),
+            GalleryItem(imageUrl = "gallery_6"),
+            GalleryItem(imageUrl = "gallery_4"),
+            GalleryItem(imageUrl = "gallery_5"),
+            GalleryItem(imageUrl = "gallery_2"),
+            GalleryItem(imageUrl = "gallery_3"),
         )
     }
 
@@ -68,9 +82,9 @@ object DummyData {
 
     fun getVideoItems(): List<VideoItem> {
         return listOf(
-            VideoItem(title = "Introduction to Android Development", thumbnailUrl = "video_1", videoUrl = "https://www.youtube.com/watch?v=KusHOIl8BaU&list=RDMMKusHOIl8BaU&start_radio=1"), // <--- GANTI THUMBNAIL
-            VideoItem(title = "The Beauty of Indonesian Nature", thumbnailUrl = "video_2", videoUrl = "https://www.youtube.com/watch?v=KusHOIl8BaU&list=RDMMKusHOIl8BaU&start_radio=1"), // <--- GANTI THUMBNAIL
-            VideoItem(title = "Cooking Vlog: Indonesian Street Food", thumbnailUrl = "video_3", videoUrl = "https://www.youtube.com/watch?v=KusHOIl8BaU&list=RDMMKusHOIl8BaU&start_radio=1") // <--- GANTI THUMBNAIL
+            VideoItem(title = "The Beginning After The End", thumbnailUrl = "video_1", videoUrl = "https://anime.oploverz.ac/the-beginning-after-the-end-episode-10-subtitle-indonesia/"),
+            VideoItem(title = "Wind Breaker S2", thumbnailUrl = "video_2", videoUrl = "https://anime.oploverz.ac/wind-breaker-s2-episode-10-subtitle-indonesia/"),
+            VideoItem(title = "One Piece", thumbnailUrl = "video_3", videoUrl = "https://anime.oploverz.ac/one-piece-episode-1132-subtitle-indonesia/")
         )
     }
 

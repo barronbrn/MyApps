@@ -9,7 +9,8 @@ object Constants {
     const val YOUR_EMAIL = "qwebaron7@gmail.com"
     const val YOUR_TWITTER_URL = "https://www.twitter.com/barron_brn"
     const val YOUR_WHATSAPP_URL = "https://wa.me/6281234567890"
+    const val YOUR_INSTAGRAM_URL = "https://www.instagram.com/barron.brn"
 
-    const val YOUR_MAP_LATITUDE = 6.49360
-    const val YOUR_MAP_LONGITUDE = 107.30115
+    const val YOUR_MAP_LATITUDE = -6.8266604
+    const val YOUR_MAP_LONGITUDE = 107.5031931
 }

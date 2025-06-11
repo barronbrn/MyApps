@@ -18,25 +18,63 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tentang"
+            android:text="Profile"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/biru_tua"
             android:layout_marginBottom="8dp" />
 
-        <include
-            android:id="@+id/menu_item_profile_detail"
-            layout="@layout/item_profile_menu"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="24dp" app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
 
-        <include
-            android:id="@+id/menu_item_interests"
-            layout="@layout/item_profile_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile_picture"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/biru_tua"
+                    android:contentDescription="Profile Picture" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dani Herawan"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/biru_tua" />
+
+                        <TextView
+                            android:id="@+id/tv_user_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="qwebaron7@gmail.com" android:textSize="14sp"
+                            android:textColor="@color/abu_abu_gelap"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
 
         <!-- Bagian "Terhubung" -->
         <TextView

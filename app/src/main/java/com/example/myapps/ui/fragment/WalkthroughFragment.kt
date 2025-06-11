@@ -37,9 +37,6 @@ class WalkthroughFragment : Fragment() {
         val pagerAdapter = WalkthroughPagerAdapter(this, viewModel.walkthroughPages)
         binding.viewPagerWalkthrough.adapter = pagerAdapter
 
-        TabLayoutMediator(binding.pageIndicator, binding.viewPagerWalkthrough) { tab, position ->
-        }.attach()
-
 
         binding.viewPagerWalkthrough.registerOnPageChangeCallback(object : androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {

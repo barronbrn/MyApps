@@ -27,16 +27,6 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- Page Indicator (menggunakan TabLayout untuk indikator dot) -->
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/page_indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"
-        app:tabBackground="@drawable/tab_indicator_selector"
-        app:tabIndicatorHeight="0dp" />
-
     <!-- Tombol Selanjutnya / Mulai -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_next_get_started"

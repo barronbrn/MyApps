@@ -1,4 +1,4 @@
-package com.example.myapps
+package com.example.myapps.ui
 
 import android.os.Bundle
 import android.view.View
@@ -7,30 +7,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.myapps.R
 import com.example.myapps.databinding.ActivityMainBinding
 import com.example.myapps.ui.viewmodel.SplashViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlin.getValue
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val splashViewModel: SplashViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        installSplashScreen().apply {
-            setKeepOnScreenCondition {
-                splashViewModel.isLoading.value
-            }
-
-            setOnExitAnimationListener { splashScreenView ->
-                splashScreenView.remove()
-            }
-        }
-
-
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

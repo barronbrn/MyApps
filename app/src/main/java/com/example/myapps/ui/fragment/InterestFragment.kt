@@ -55,7 +55,6 @@ class InterestFragment : Fragment() {
         }
     }
 
-    // Fungsi helper untuk menambahkan chip secara dinamis ke LinearLayout
     private fun addChipsToLayout(layout: FlexboxLayout, items: List<String>, colorResId: Int) {
         layout.removeAllViews() // Hapus chip yang sudah ada
 

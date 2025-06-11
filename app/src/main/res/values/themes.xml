@@ -16,14 +16,6 @@
     </style>
 
 
-    <!-- Tema untuk splash screen (digunakan di AndroidManifest.xml) -->
-    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/biru_tua</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <item name="windowSplashScreenAnimationDuration">1000</item>
-        <item name="postSplashScreenTheme">@style/Theme.MyApps</item>
-    </style>
-
     <!-- Tema tanpa ActionBar untuk MainActivity agar splash screen berfungsi -->
     <style name="Theme.MyApps.NoActionBar" parent="Theme.MyApps">
         <item name="windowActionBar">false</item>

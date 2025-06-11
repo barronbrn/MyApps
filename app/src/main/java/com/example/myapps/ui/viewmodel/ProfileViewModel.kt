@@ -14,13 +14,11 @@ class ProfileViewModel @Inject constructor(
     private val repository: AppRepository
 ) : ViewModel() {
 
-
     val userProfile: LiveData<UserProfile?> = repository.getUserProfile().asLiveData()
 
-
-    val hobbies: LiveData<List<Interest>> = repository.getInterestsByType("Hobi").asLiveData()
-    val likes: LiveData<List<Interest>> = repository.getInterestsByType("Suka").asLiveData()
-    val dislikes: LiveData<List<Interest>> = repository.getInterestsByType("Tidak Suka").asLiveData()
-    val specialInterests: LiveData<List<Interest>> = repository.getInterestsByType("Minat Khusus").asLiveData()
-    val aspirations: LiveData<List<Interest>> = repository.getInterestsByType("Cita-cita").asLiveData()
+    val hobbies: LiveData<List<Interest>> = repository.getInterestsByType("hoby").asLiveData()
+    val likes: LiveData<List<Interest>> = repository.getInterestsByType("suka").asLiveData()
+    val dislikes: LiveData<List<Interest>> = repository.getInterestsByType("tidak_suka").asLiveData()
+    val specialInterests: LiveData<List<Interest>> = repository.getInterestsByType("minat").asLiveData()
+    val aspirations: LiveData<List<Interest>> = repository.getInterestsByType("cita_cita").asLiveData()
 }

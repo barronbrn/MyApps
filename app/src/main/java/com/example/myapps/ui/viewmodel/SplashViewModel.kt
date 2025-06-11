@@ -24,7 +24,7 @@ class SplashViewModel @Inject constructor(
     init {
         viewModelScope.launch {
 
-            delay(2000L)
+            delay(3000L)
             populateDummyData()
             _isLoading.value = false
         }
@@ -36,6 +36,7 @@ class SplashViewModel @Inject constructor(
             if (userProfile == null) {
                 viewModelScope.launch {
                     repository.insertUserProfile(DummyData.getUserProfile())
+                    repository.insertAllInterests(DummyData.getInterests())
                     repository.insertAllDailyActivities(DummyData.getDailyActivities())
                     repository.insertAllFriends(DummyData.getFriends())
                     repository.insertAllGalleryItems(DummyData.getGalleryItems())
